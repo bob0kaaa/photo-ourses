@@ -1,13 +1,13 @@
 @font-face {
 	font-family: Roboto;
-	src: url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,700&display=swap);
+	C
 }
 
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 }
-section:nth-child(2n + 1) {
+section:nth-child(2n) {
 	background: #000;
 }
 
@@ -23,6 +23,11 @@ h3 {
 	color: #f39200;
 }
 
+h5{
+	font-size: 1.375rem;
+	font-weight: 700;
+}
+
 a {
 	transition: all 0.4s ease 0s;
 }
@@ -30,6 +35,11 @@ a {
 a:hover {
 	color: #f39200;
 	transition: all 0.4s ease 0s;
+}
+
+.p100{
+	margin-top: 190px;
+	margin-bottom: 280px;
 }
 
 .header {
@@ -90,7 +100,8 @@ a:hover {
 }
 
 .block__content-banner {
-	margin-top: 488px;
+	padding-top: 288px;
+	padding-bottom: 0px;
 }
 .content__banner-title {
 }
@@ -193,4 +204,124 @@ a:hover {
 }
 .row__mb {
 	padding-bottom: 120px;
+}
+
+.block__learn {
+	margin-top: 112px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.learn__item {
+	width: 45%;
+	list-style: none;
+}
+
+.item-title-h5{
+
+}
+
+.item-title-h5::after {
+	content: "";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	left: -20px;
+	top: 7px;
+	background: #f7b654;
+	border-radius: 50%;
+}
+
+.learn__item:nth-child(2n) {
+	margin-left: 5%;
+}
+
+.learn__item:nth-child(n + 3) {
+	margin-top: 50px;
+}
+
+.learn__item-title {
+	font-size: 22px;
+	font-weight: 700;
+	position: relative;
+}
+.learn__item-content {
+	min-height: 100px;
+}
+
+.accordion{
+	margin-top: 100px;
+	margin-bottom: 170px;
+}
+
+.card-header {
+	background-color: #000;
+}
+.btn-check:focus + .btn, .btn:focus {
+	box-shadow: 0;
+}
+
+.btn-link{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.btn-link:hover{
+	color: #f39200;
+	transition: all 0.4s ease 0s;
+}
+
+.card-body-item{
+	list-style: none;
+	position: relative;
+}
+
+.card-body-item::after {
+		content: "";
+		width: 8px;
+		height: 8px;
+		position: absolute;
+		left: -20px;
+		top: 7px;
+		background: #f7b654;
+		border-radius: 50%;
+}
+
+.card-body-item:nth-child(n+2){
+	margin-top: 5px;
+}
+
+.form__raining-item{
+	background: #FFFFFF;
+box-shadow: 1px -1px 35px rgba(0, 0, 0, 0.25);
+border-radius: 11px;
+padding: 10px;
+}
+
+.raining-item-number{
+	padding: 10px;
+	margin-left: 15px;
+	margin-top: 13px;
+	border: 2px solid #F39200;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	font-size: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.raining-item-title{
+	min-height: 80px;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 40px;
+}
+.raining-item-img{
+
+}
+
+.item-img{
+	width: 100%;
 }

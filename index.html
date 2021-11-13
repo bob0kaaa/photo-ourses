@@ -7,6 +7,15 @@
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<script src="./js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Мобильная съемка от УГМК</title>
 </head>
@@ -20,9 +29,9 @@
 				</div>
 				<div class="col-lg-8">
 					<nav>
-						<ul class="menu d-flex justify-content-center">
+						<ul class="menu d-flex justify-content-end">
 							<li class="menu__item">
-								<a class="menu__item-link" href="#">для кого</a>
+								<a class="menu__item-link" data-goto=".section__for" href="#">для кого</a>
 							</li>
 							<li class="menu__item">
 								<a class="menu__item-link" href="#">программа</a>
@@ -49,91 +58,418 @@
 			</div>
 		</div>
 	</header>
-	<section class="section__banner">
-		<div class="container">
-			<div class="row d-flex justify-content-end">
-				<div class="col-lg-6 block__content-banner">
-					<div class="content__banner-title">
-						<h1>мобильная съемка</h1>
-					</div>
-					<div class="banner__title-org">
-						<span>от угмк</span>
-					</div>
-					<div class="banner__text">
-						<span>Научим снимать красиво и зарабатывать</span>
-					</div>
-					<div class="banner__btn">
-						<a class="banner__btn-link" href="#">Записаться</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section>
-	<section class="section__for">
-		<div class="container">
-			<div class="row">
-				<div class=" title-section col-lg-12 d-flex justify-content-end">
-					<h3>для кого</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 block__photo-mt">
-					<div class="block__photo block__photo-1">
-						<div class="for__photo-title">
-							<h4>
-								Предприниматели
-							</h4>
+	<main>
+		<section class="section__banner">
+			<div class="container">
+				<div class="row d-flex justify-content-end">
+					<div class="col-lg-6 block__content-banner">
+						<div class="content__banner-title">
+							<h1>мобильная съемка</h1>
 						</div>
-						<div class="for__photo-text">
-							<p>Которые продвигают свои услуги
-								и товары через интернет и вам
-								нужен продающий видеоконтент </p>
+						<div class="banner__title-org">
+							<span>от угмк!</span>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 block__photo-mt">
-					<div class="block__photo block__photo-2">
-						<div class="for__photo-title">
-							<h4>
-								Фрилансеры
-							</h4>
+						<div class="banner__text">
+							<span>Научим снимать красиво и зарабатывать</span>
 						</div>
-						<div class="for__photo-text">
-							<p>Которым для выполнения заказов
-								необходим качественный видеоконтент </p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row row__mb">
-				<div class="col-lg-6 block__photo-mt">
-					<div class="block__photo block__photo-3">
-						<div class="for__photo-title">
-							<h4>
-								Маркетологи, PRщики, журналисты, SMMщики
-							</h4>
-						</div>
-						<div class="for__photo-text">
-							<p>Повысить свой профессиональный уровень</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 block__photo-mt">
-					<div class="block__photo block__photo-4">
-						<div class="for__photo-title">
-							<h4>
-								Видеосъемка для вас интересное хобби
-							</h4>
-						</div>
-						<div class="for__photo-text">
-							<p></p>
+						<div class="banner__btn">
+							<a class="banner__btn-link" href="#">Записаться</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-	</section>
+		</section>
+		<section class="section__for">
+			<div class="container">
+				<div class="row">
+					<div class=" title-section col-lg-12 d-flex justify-content-end">
+						<h3>для кого</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 block__photo-mt">
+						<div class="block__photo block__photo-1">
+							<div class="for__photo-title">
+								<h4>
+									Предприниматели
+								</h4>
+							</div>
+							<div class="for__photo-text">
+								<p>Которые продвигают свои услуги
+									и товары через интернет и вам
+									нужен продающий видеоконтент </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 block__photo-mt">
+						<div class="block__photo block__photo-2">
+							<div class="for__photo-title">
+								<h4>
+									Фрилансеры
+								</h4>
+							</div>
+							<div class="for__photo-text">
+								<p>Которым для выполнения заказов
+									необходим качественный видеоконтент </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row__mb">
+					<div class="col-lg-6 block__photo-mt">
+						<div class="block__photo block__photo-3">
+							<div class="for__photo-title">
+								<h4>
+									Маркетологи, PRщики, журналисты, SMMщики
+								</h4>
+							</div>
+							<div class="for__photo-text">
+								<p>Повысить свой профессиональный уровень</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 block__photo-mt">
+						<div class="block__photo block__photo-4">
+							<div class="for__photo-title">
+								<h4>
+									Видеосъемка для вас интересное хобби
+								</h4>
+							</div>
+							<div class="for__photo-text">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class=" title-section col-lg-12 d-flex">
+						<h3>чему вы научитесь</h3>
+					</div>
+				</div>
+				<div class="row">
+					<ul class="block__learn">
+						<li class="learn__item">
+							<div class="learn__item-title">
+								<h5 class="item-title-h5">Снимать впечатляющее фото</h5>
+							</div>
+							<div class="learn__item-content">
+
+							</div>
+						</li>
+						<li class="learn__item">
+							<div class="learn__item-title">
+								<h5 class="item-title-h5">Создавать «продающие» видеоролики</h5>
+							</div>
+							<div class="learn__item-content">
+								<p>
+									Снимать и монтировать видеоролики на смартфоне любой фирмы для решения бизнес, профессиональных
+									и/или личных целей/задач.
+									Снимать и монтировать видеоролики на смартфоне любой фирмы для решения бизнес, профессиональных
+									и/или личных целей/задач. Снимать и монтировать видеоролики на смартфоне любой фирмы для решения
+									бизнес, профессиональных
+									и/или личных целей/задач.
+								</p>
+							</div>
+						</li>
+						<li class="learn__item">
+							<div class="learn__item-title">
+								<h5 class="item-title-h5">Узнать, как обычный видеоролик превратить
+									в мини-фильм. </h5>
+							</div>
+							<div class="learn__item-content">
+
+							</div>
+						</li>
+						<li class="learn__item">
+							<div class="learn__item-title">
+								<h5 class="item-title-h5">Монтировать видео для Stories и не только</h5>
+							</div>
+							<div class="learn__item-content">
+
+							</div>
+						</li>
+						<li class="learn__item">
+							<div class="learn__item-title">
+								<h5 class="item-title-h5">Подбирать аксессуары для съемки</h5>
+							</div>
+							<div class="learn__item-content">
+								<p>В зависимости от задач/условий съемке использовать борудование, например, квадракоптер, штатив,
+									объектив, стабилизатор и т.д.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class=" title-section col-lg-12 d-flex justify-content-end">
+						<h3>программа курса</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h5 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+										aria-expanded="true" aria-controls="collapseOne">
+										Основные технические характеристики камер смартфонов
+									</button>
+								</h5>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul>
+										<li class="card-body-item">Поймете отличие технических характеристик камер флагманских
+											смартфонов (Samsung, Huawei, Xiaomi, Apple)</li>
+										<li class="card-body-item">Узнаете в каком разрешении рекомендуется снимать видео </li>
+										<li class="card-body-item">Узнаете рекомендуемую частоту кадров для качественного видео
+										</li>
+										<li class="card-body-item">Как ProCam превращает ваш смартфон в профессиональную камеру
+											с детальной настройкой параметров Изучить функционал приложения
+											ProCam для видеосъемки</li>
+										<li class="card-body-item">Узнать о различных режимах съёмки</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+										aria-expanded="false" aria-controls="collapseTwo">
+										Главные секреты впечатляющего видео
+									</button>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul>
+										<li class="card-body-item">Поймете отличие технических характеристик камер флагманских
+											смартфонов (Samsung, Huawei, Xiaomi, Apple)</li>
+										<li class="card-body-item">Узнаете в каком разрешении рекомендуется снимать видео </li>
+										<li class="card-body-item">Узнаете рекомендуемую частоту кадров для качественного видео
+										</li>
+										<li class="card-body-item">Как ProCam превращает ваш смартфон в профессиональную камеру
+											с детальной настройкой параметров Изучить функционал приложения
+											ProCam для видеосъемки</li>
+										<li class="card-body-item">Узнать о различных режимах съёмки</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingThree">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+										data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Правила композиции для красивого видео
+									</button>
+								</h5>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul>
+										<li class="card-body-item">Поймете отличие технических характеристик камер флагманских
+											смартфонов (Samsung, Huawei, Xiaomi, Apple)</li>
+										<li class="card-body-item">Узнаете в каком разрешении рекомендуется снимать видео </li>
+										<li class="card-body-item">Узнаете рекомендуемую частоту кадров для качественного видео
+										</li>
+										<li class="card-body-item">Как ProCam превращает ваш смартфон в профессиональную камеру
+											с детальной настройкой параметров Изучить функционал приложения
+											ProCam для видеосъемки</li>
+										<li class="card-body-item">Узнать о различных режимах съёмки</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingFour">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+										data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										Основы операторского мастерства на смартфоне
+									</button>
+								</h5>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul>
+										<li class="card-body-item">Поймете отличие технических характеристик камер флагманских
+											смартфонов (Samsung, Huawei, Xiaomi, Apple)</li>
+										<li class="card-body-item">Узнаете в каком разрешении рекомендуется снимать видео </li>
+										<li class="card-body-item">Узнаете рекомендуемую частоту кадров для качественного видео
+										</li>
+										<li class="card-body-item">Как ProCam превращает ваш смартфон в профессиональную камеру
+											с детальной настройкой параметров Изучить функционал приложения
+											ProCam для видеосъемки</li>
+										<li class="card-body-item">Узнать о различных режимах съёмки</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingFive">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+										data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+										Сам себе режиссер- монтажер
+									</button>
+								</h5>
+							</div>
+							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul>
+										<li class="card-body-item">Поймете отличие технических характеристик камер флагманских
+											смартфонов (Samsung, Huawei, Xiaomi, Apple)</li>
+										<li class="card-body-item">Узнаете в каком разрешении рекомендуется снимать видео </li>
+										<li class="card-body-item">Узнаете рекомендуемую частоту кадров для качественного видео
+										</li>
+										<li class="card-body-item">Как ProCam превращает ваш смартфон в профессиональную камеру
+											с детальной настройкой параметров Изучить функционал приложения
+											ProCam для видеосъемки</li>
+										<li class="card-body-item">Узнать о различных режимах съёмки</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingSix">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix"
+										aria-expanded="false" aria-controls="collapseSix">
+										Защита итогового проекта - снятый и смонтированный видеоролик
+									</button>
+								</h5>
+							</div>
+							<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul>
+										<li class="card-body-item">Поймете отличие технических характеристик камер флагманских
+											смартфонов (Samsung, Huawei, Xiaomi, Apple)</li>
+										<li class="card-body-item">Узнаете в каком разрешении рекомендуется снимать видео </li>
+										<li class="card-body-item">Узнаете рекомендуемую частоту кадров для качественного видео
+										</li>
+										<li class="card-body-item">Как ProCam превращает ваш смартфон в профессиональную камеру
+											с детальной настройкой параметров Изучить функционал приложения
+											ProCam для видеосъемки</li>
+										<li class="card-body-item">Узнать о различных режимах съёмки</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class=" title-section col-lg-12 d-flex">
+						<h3>форма обучения</h3>
+					</div>
+				</div>
+				<div class="row  p100 d-flex justify-content-between">
+					<div class="col-3 form__raining">
+						<div class="form__raining-item">
+							<div class="row">
+								<div class="col-1"><span class="raining-item-number">1</span></div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="raining-item-title">
+										Изучаете практические
+										видеоуроки продолжительностью
+										10-15 минут
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="raining-item-img">
+										<img class="item-img" src="/img/videourik.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 form__raining">
+						<div class="form__raining-item">
+							<div class="row">
+								<div class="col-1"><span class="raining-item-number">2</span></div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="raining-item-title">
+										Работаете с преподавателем на вебинарах
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="raining-item-img">
+										<img class="item-img" src="/img/vebinar.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 form__raining">
+						<div class="form__raining-item">
+							<div class="row">
+								<div class="col-1"><span class="raining-item-number">3</span></div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="raining-item-title">
+										Выполняете домашнее задание и получаете обратную связь
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="raining-item-img">
+										<img class="item-img" src="/img/dz.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 form__raining">
+						<div class="form__raining-item">
+							<div class="row">
+								<div class="col-1"><span class="raining-item-number">4</span></div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="raining-item-title">
+										Защищаете итоговый проект
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="raining-item-img">
+										<img class="item-img" src="/img/proekt.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
